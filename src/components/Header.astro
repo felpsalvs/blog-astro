@@ -3,6 +3,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 import { HOMEPAGE_URL } from '../consts'
 import HeaderLink from './HeaderLink.astro'
 import Logo from './icons/logo'
+import ThemeToggle from './ThemeToggleButton'
 ---
 
 <header class="fixed w-full pq2 z-20 backdrop-blur-md">
@@ -20,6 +21,7 @@ import Logo from './icons/logo'
         >
       </div>
       <div class="flex-1"></div>
+      <ThemeToggle client:load/>
     </nav>
   </div>
 </header>

@@ -46,7 +46,7 @@ export default function ThemeToggle() {
             onClick={toggleTheme}
             aria-label="Toggle theme"
             className={`${
-              checked ? 'bg-white' : ''
+              checked ? 'bg-white text-black' : ''
             } cursor-pointer rounded-3xl p-2`}
           >
             {t === 'light' ? <IoSunny /> : <IoMoon />}

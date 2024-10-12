@@ -2,9 +2,10 @@
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../consts'
 import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
+import { IoArrowForward } from 'react-icons/io5'
 ---
 
 <!doctype html>
@@ -18,8 +19,14 @@ import Content from '../components/Content.astro'
       <h1 class="font-mplus text-center">Felipe Alves</h1>
       <Content>
         <section>
-          <p class="mb-8 indent-4">fELIPE é um desenvolvedor talta e</p>
-        </section></Content>
+          <p class="mb-8 indent-4">
+            fELIPE é um desenvolvedor talta e<a
+              class="inline-flex items-center gap-1 indent-1 text-orange-500"
+              href={HOMEPAGE_URL}
+              >Learn more about me <IoArrowForward className="inline" /></a>
+          </p>
+        </section></Content
+      >
     </main>
     <Footer />
   </Body>

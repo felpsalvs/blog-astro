@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../consts'
 import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
 import { IoArrowForward } from 'react-icons/io5'
+import Masthead from '../components/Masthead.astro'
 ---
 
 <!doctype html>
@@ -16,7 +17,7 @@ import { IoArrowForward } from 'react-icons/io5'
   <Body>
     <Header />
     <main class="pt-[56px]">
-      <h1 class="font-mplus text-center">Felipe Alves</h1>
+      <Masthead />
       <Content>
         <section>
           <p class="mb-8 indent-4">

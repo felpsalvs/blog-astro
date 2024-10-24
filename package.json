@@ -8,7 +8,6 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "husky install",
     "commit": "git-cz"
   },
   "dependencies": {
@@ -30,12 +29,15 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.13.0",
     "@typescript-eslint/parser": "^8.8.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.12.0",
+    "eslint": "^9.13.0",
     "eslint-plugin-astro": "^1.2.4",
-    "husky": "^9.1.6"
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.11.0"
   },
   "config": {
     "commitizen": {

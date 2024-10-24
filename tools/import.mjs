@@ -40,8 +40,16 @@ if (mdastNode.alt){
   const fn = `${frontmatter.slug}_${toKebabCase(mdastNode.alt)}${extension}`
   const res = {
   filePath: `${publicPath}/${fn}`,
-  
+  url: `/posts/${fn}` 
 }
+if (mdastNode.alt === 'thumbnail'){
+frontmatter.heroImage = res.url
 }
+return res
+} else return false
+},
+postProcessNote: ({md}) => {
+const md2 = md.replace(/\!\[thumbnail\]\(.*\)\n/, '')
+return md2
 }
 })

@@ -8,7 +8,7 @@ import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
 import { IoArrowForward } from 'react-icons/io5'
 import Masthead from '../components/Masthead.astro'
-import { Image } from '@astrojs/image/components'
+import { Image } from 'astro:assets'
 import CreatedWithSection from '../components/CreatedWithSection.astro'
 
 const images = import.meta.glob<{default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
@@ -52,7 +52,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
               
                   <Image
                     class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                
+                    src={heroImageSrc} 
                     width={720}
                     height={720 / 1.777}
                     alt="Thumbnail"

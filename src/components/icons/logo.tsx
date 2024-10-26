@@ -4,8 +4,7 @@ export default function Logo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1365.333"
-      height="1365.333"
+      className="w-5 inline-block transition-transform group-hover:rotate-[20deg]"
       version="1"
       viewBox="0 0 1024 1024"
     >

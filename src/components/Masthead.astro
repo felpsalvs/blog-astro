@@ -15,8 +15,14 @@ const baseAssetUrl = isProd
       loop="loop"
       playsinline
     >
-    <source src={baseAssetUrl + '/masthead.webm'} type="video/webm; codecs=vp9" />
-    <source src={baseAssetUrl + "/masthead.m4v"} type="video/mp4; codecs=hvc1" />
+      <source
+        src={baseAssetUrl + '/masthead.webm'}
+        type="video/webm; codecs=vp9"
+      />
+      <source
+        src={baseAssetUrl + '/masthead.m4v'}
+        type="video/mp4; codecs=hvc1"
+      />
     </video>
   </div>
   <div class="z-10 text-center px-8 drop-shadow-lg shadow-black">
